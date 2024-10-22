@@ -6,18 +6,12 @@ return {
         keys = {
             {
                 "<leader>pf",
-                function()
-                    local builtin = require('telescope.builtin')
-                    builtin.find_files()
-                end,
+                require('telescope.builtin').find_files,
                 desc = "Find file in directory"
             },
             {
                 "<C-p>",
-                function()
-                    local builtin = require('telescope.builtin')
-                    builtin.git_files()
-                end,
+                require('telescope.builtin').git_files,
                 desc = "Find file in git"
             },
         }
