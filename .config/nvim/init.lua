@@ -1,1 +1,1 @@
-require("bigspaceships")
+require("config")
