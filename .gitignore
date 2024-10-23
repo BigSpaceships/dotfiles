@@ -1,0 +1,7 @@
+.cfg
+.config/JetBrains
+.config/gh
+.config/jgit
+.config/procps
+
+.config/tmux/plugins
