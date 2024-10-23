@@ -10,6 +10,9 @@ return {
                 floats = "transparent",
             },
         },
+        init = function()
+            vim.cmd.colorscheme "tokyonight"
+        end,
     },
     {
         "mbbill/undotree",
@@ -66,12 +69,6 @@ return {
                 end,
                 desc = "Open harpoon mark 4"
             },
-        },
-    },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "tokyonight"
         },
     },
 }
