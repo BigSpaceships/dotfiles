@@ -28,4 +28,13 @@ return {
         statuscolumn = { enabled = true },
         words = { enabled = true },
     },
+    keys = {
+        {
+            "<leader>d",
+            function()
+                Snacks.dashboard()
+            end,
+            desc = "open dashboard"
+        },
+    }
 }
