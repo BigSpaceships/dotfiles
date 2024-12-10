@@ -23,6 +23,7 @@ return {
                 { section = "startup" },
             },
         },
+        indent = { enabled = true },
         notifier = { enabled = true },
         quickfile = { enabled = true },
         statuscolumn = { enabled = true },
