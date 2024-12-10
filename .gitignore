@@ -1,7 +1,16 @@
+*
+
+!.config/
+!.config/**
+!.gitignore
+!.zshrc
+
 .cfg
 .config/JetBrains
 .config/gh
 .config/jgit
 .config/procps
+
+.config/nvim/lazy-lock.json
 
 .config/tmux/plugins
