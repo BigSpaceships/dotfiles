@@ -12,6 +12,13 @@ return {
                 desc = "Find file in directory"
             },
             {
+                "<leader>pg",
+                function()
+                    require('telescope.builtin').live_grep()
+                end,
+                desc = "Find file using grep"
+            },
+            {
                 "<C-p>",
                 function()
                 require('telescope.builtin').git_files()
