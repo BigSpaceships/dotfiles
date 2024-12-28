@@ -2,8 +2,11 @@
 
 !.config/
 !.config/**
+!assets/
+!assets/**
 !.gitignore
 !.zshrc
+!README.md
 
 .cfg
 .config/JetBrains
