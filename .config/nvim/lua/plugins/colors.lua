@@ -4,6 +4,10 @@ return {
         opts = {
             auto_enable = true,
             lsp = true,
+            recognize = {
+                -- input = true,
+                -- output = true,
+            },
         },
         keys = {
             {

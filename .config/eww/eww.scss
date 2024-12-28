@@ -1,0 +1,19 @@
+$background-color: rgba(116, 189, 208, 0.65);
+$foreground-color: rgb(241 240 238);
+
+window {
+  background: transparent;
+}
+
+.bar {
+  margin-top: 2px;
+}
+
+.section {
+  background: $background-color;
+  padding: 0px 14px;
+
+  border-radius: 8px;
+
+  color: $foreground-color;
+}
