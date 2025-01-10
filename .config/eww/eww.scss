@@ -1,19 +1,29 @@
-$background-color: rgba(116, 189, 208, 0.65);
-$foreground-color: rgb(241 240 238);
-
 window {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
+
+  font-size: 20px;
 }
 
 .bar {
   margin-top: 2px;
+
+  padding: 12px 20px 0px;
 }
 
 .section {
-  background: $background-color;
+  /* background: rgba(116, 189, 208, 0.65); */
   padding: 0px 14px;
 
   border-radius: 8px;
 
-  color: $foreground-color;
+  /* color: rgb(241, 240, 238); */
+
+  color: rgb(116, 189, 208);
+}
+
+.element > * {
+}
+
+.icon {
+  margin: 1px 8px 0px 0px;
 }

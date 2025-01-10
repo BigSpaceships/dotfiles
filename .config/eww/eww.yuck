@@ -1,14 +1,24 @@
-(defpoll time :interval "1s"
-    `date +'{"hour":"%H","min":"%M","sec":"%S"}'`
-    )
+(defpoll time :interval "1s" `date +'{"hour":"%H","min":"%M","sec":"%S"}'`)
+
+(defpoll batt_icon :interval "1m" `scripts/battery --icon`)
+(defpoll batt_percent :interval "1m" `scripts/battery --perc`)
 
 (defwidget bar []
-    (box :orientation "horizontal" :halign "center" :class "bar"
-        (clock)))
+    (centerbox :orientation "horizontal" :halign "fill" :class "bar"
+        (box :orientation "horizontal" :halign "start" )
+        (box :orientation "horizontal" :halign "center" :class "section"
+            (clock))
+        (box :orientation "horizontal" :halign "end" :class "section"
+            (batt))))
     
 (defwidget clock []
-    (box :orientation "horizontal" :halign "center" :class "section"
+    (box :orientation "horizontal" :halign "center" :class "element"
         (label :text "${time.hour}:${time.min}:${time.sec}")))
+
+(defwidget batt []
+    (box :orientation "horizontal" :halign "center" :class "element"
+        (image :class "icon" :path batt_icon :image-width 30 :fill-svg "#ff9999")
+        (label :class "icon-text" :text batt_percent)))
 
 (defwindow bar
     :exclusive true
