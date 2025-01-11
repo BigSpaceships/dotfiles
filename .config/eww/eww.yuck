@@ -1,7 +1,11 @@
 (defpoll time :interval "1s" `date +'{"hour":"%H","min":"%M","sec":"%S"}'`)
 
-(defpoll batt_icon :interval "1m" `scripts/battery --icon`)
-(defpoll batt_percent :interval "1m" `scripts/battery --perc`)
+; (defpoll batt_icon :interval "1m" `scripts/battery --icon`)
+(defpoll batt_percent :interval "30s" `scripts/battery-update --perc`)
+(defpoll batt_remaining :interval "30s" `scripts/battery-update --remain`)
+
+; (deflisten batt_icon :initial "images/icons/battery-1.svg" `unbuffer tail -F battery-log.txt | awk -F ',' '{print $2}'`)
+(deflisten batt_icon :initial "images/icons/battery-1.svg" `tail -F /tmp/battery-icon-log`)
 
 (defwidget bar []
     (centerbox :orientation "horizontal" :halign "fill" :class "bar"

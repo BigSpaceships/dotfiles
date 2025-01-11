@@ -10,13 +10,13 @@ main() {
 	elif [[ $CHARGE = *"Full"* ]]; then
 		echo "images/icons/battery-4.svg"
 	else
-		if [[ ($BATTERY -lt 100) && (($BATTERY -gt 75) || ($BATTERY -eq 75)) ]]; then
+		if [[ ($BATTERY -lt 100) && (($BATTERY -gt 70) || ($BATTERY -eq 70)) ]]; then
 			echo "images/icons/battery-4.svg"
-		elif [[ ($BATTERY -lt 75) && (($BATTERY -gt 50) || ($BATTERY -eq 50)) ]]; then
+		elif [[ ($BATTERY -lt 70) && (($BATTERY -gt 45) || ($BATTERY -eq 45)) ]]; then
+			echo "images/icons/battery-4.svg"
+		elif [[ ($BATTERY -lt 45) && (($BATTERY -gt 25) || ($BATTERY -eq 25)) ]]; then
 			echo "images/icons/battery-2.svg"
-		elif [[ ($BATTERY -lt 50) && (($BATTERY -gt 15) || ($BATTERY -eq 15)) ]]; then
-			echo "images/icons/battery-1.svg"
-		elif [[ ($BATTERY -lt 15) && (($BATTERY -gt 0) || ($BATTERY -eq 0)) ]]; then
+		elif [[ ($BATTERY -lt 25) && (($BATTERY -gt 0) || ($BATTERY -eq 0)) ]]; then
 			echo "images/icons/battery-1.svg"
 		fi
 	fi
