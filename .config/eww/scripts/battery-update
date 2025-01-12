@@ -16,7 +16,7 @@ get_icon() {
 	elif [[ $CHARGE = *"Full"* ]]; then
 		icon="images/icons/battery-4.svg"
 	else
-		if [[ ($BATTERY -lt 100) && (($BATTERY -gt 70) || ($BATTERY -eq 70)) ]]; then
+		if [[ (($BATTERY -gt 70) || ($BATTERY -eq 70)) ]]; then
 			icon="images/icons/battery-4.svg"
 		elif [[ ($BATTERY -lt 70) && (($BATTERY -gt 45) || ($BATTERY -eq 45)) ]]; then
 			icon="images/icons/battery-4.svg"
@@ -26,6 +26,8 @@ get_icon() {
 			icon="images/icons/battery-1.svg"
 		fi
 	fi
+
+    # notify-send "${BATTERY} ${CHARGE} ${icon}"
 
     echo "${icon}" >> /tmp/battery-icon-log
 }

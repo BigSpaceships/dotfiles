@@ -1,7 +1,23 @@
 *
 
-!.config/
-!.config/**
+!.config/eww
+!.config/eww**
+
+!.config/hypr
+!.config/hypr**
+
+!.config/kitty
+!.config/kitty*
+
+!.config/nvim
+!.config/nvim**
+
+!.config/tmux
+!.config/tmux**
+
+!.config/uwsm
+!.config/uwsm**
+
 !assets/
 !assets/**
 !.gitignore

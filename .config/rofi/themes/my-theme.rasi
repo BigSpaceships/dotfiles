@@ -1,0 +1,72 @@
+* {
+    font: "Cantarell 14";
+
+    dark: #151715;
+    light: #74bdd0;
+    text: #adc8cf;
+
+    border-dark: #36a6cf;
+
+    background-color: transparent;
+
+    text-color: @text;
+}
+
+window {
+    padding: 1em;
+
+    background-color: @dark;
+
+    border: 2px;
+    border-color: @border-dark;
+    border-radius: 4px;
+
+    width: 35%;
+
+    children: [ "inputbar", "separator", "listview" ];
+}
+
+inputbar {
+    padding: 0px 8px;
+
+    text-color: @light;
+    children: [ /* "prompt", */ "entry"];
+}
+
+entry {
+    text-color: @text;
+
+    placeholder: "Search";
+    placeholder-color: #67909b;
+}
+
+separator {
+    expand: false;
+
+    border: 1px 0px;
+    background-color: @light;
+
+    margin: 4px 8px;
+}
+
+listview {
+    border: 0px;
+
+    margin: 0px;
+
+    lines: 8;
+}
+
+element {
+    background-color: #151715;
+
+    padding: 4px 8px;
+
+    border-radius: 12px;
+
+    margin: 2px 0px;
+}
+
+element selected normal, element selected active {
+    background-color: rgba(116,189,208,0.50);
+}
