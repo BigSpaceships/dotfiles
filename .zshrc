@@ -106,6 +106,10 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree $HOME'
 alias configa='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree $HOME add -f'
 
+alias discord="flatpak run com.discordapp.Discord"
+
+alias clone='rclone mount google-drive:APCSWorkspaces/ drive/apcs/'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -113,4 +117,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:~/software-git/idea"
 
-alias clone='rclone mount google-drive:APCSWorkspaces/ drive/apcs/'
+eval "$(zoxide init zsh --cmd cd)"
