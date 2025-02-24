@@ -9,6 +9,9 @@
 !.config/tmux
 !.config/tmux**
 
+!.config/hypr
+!.config/hypr**
+
 !assets/
 !assets/**
 !.gitignore

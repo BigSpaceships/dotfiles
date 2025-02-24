@@ -1,0 +1,6 @@
+[submodule ".config/hypr/hypr/HyprlandUnityFix"]
+	path = .config/hypr/hypr/HyprlandUnityFix
+	url = https://github.com/nnra6864/HyprlandUnityFix
+[submodule ".config/hypr/HyprlandUnityFix"]
+	path = .config/hypr/HyprlandUnityFix
+	url = https://github.com/nnra6864/HyprlandUnityFix

@@ -9,7 +9,8 @@
 
 (defwidget bar []
     (centerbox :orientation "horizontal" :halign "fill" :class "bar"
-        (box :orientation "horizontal" :halign "start" )
+        (box :orientation "horizontal" :halign "start" 
+            (systray))
         (box :orientation "horizontal" :halign "center" :class "section"
             (clock))
         (box :orientation "horizontal" :halign "end" :class "section"
