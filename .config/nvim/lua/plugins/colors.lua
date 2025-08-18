@@ -24,7 +24,7 @@ return {
         end,
         keys = {
             {
-                "<leader>c",
+                "<leader>pc",
                 "<Cmd>CccPick<Cr>"
             }
         },
