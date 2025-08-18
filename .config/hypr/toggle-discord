@@ -1,0 +1,6 @@
+#/bin/zsh
+if hyprctl clients | rg "class: discord"; then
+    hyprctl dispatch togglespecialworkspace discord
+else 
+    flatpak run com.discordapp.Discord
+fi

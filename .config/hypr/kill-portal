@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+sleep 4
+killall -e xdg-desktop-portal-wlr
+killall xdg-desktop-portal
+/usr/lib/xdg-desktop-portal-wlr &
+notify-send "killed portal"
+echo "hello" >> /home/nowah/test.txt
+sleep 4
+/usr/lib/xdg-desktop-portal &

@@ -108,13 +108,13 @@ alias configa='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree $HOME add -f'
 
 alias discord="flatpak run com.discordapp.Discord"
 
-alias clone='rclone mount google-drive:APCSWorkspaces/ drive/apcs/'
+alias tailhlog='tail -f $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:~/software-git/idea"
+# export PATH="$PATH:~/software-git/idea"
 
 eval "$(zoxide init zsh --cmd cd)"
