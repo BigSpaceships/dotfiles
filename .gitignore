@@ -1,7 +1,7 @@
 *
 
-!.config/eww
-!.config/eww**
+!.config
+!.config**
 
 !.config/nvim
 !.config/nvim**
@@ -19,11 +19,9 @@
 !README.md
 
 .cfg
-.config/JetBrains
-.config/gh
-.config/jgit
-.config/procps
 
 .config/nvim/lazy-lock.json
 
 .config/tmux/plugins
+
+*.swp
