@@ -41,7 +41,20 @@ return {
 
             vim.lsp.enable('ts_ls')
             vim.lsp.enable('vue_ls')
+            vim.lsp.enable('pyright')
         end,
+        keys = {
+            {
+                '<leader>M',
+                function()
+                    local file_name = vim.fn.expand('%')
+
+                    vim.cmd('!tmux split-window -h -c ' .. vim.fn.getcwd())
+                    vim.cmd('!tmux send-keys \'python ' .. file_name .. '\'')
+                end,
+                ft = 'python',
+            }
+        },
     },
     -- Autocompletion
 }
