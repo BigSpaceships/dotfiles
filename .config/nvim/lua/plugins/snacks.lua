@@ -37,5 +37,12 @@ return {
             end,
             desc = "open dashboard"
         },
+        {
+            "<leander>N",
+            function()
+                Snacks.notifier.show_history()
+            end,
+            desc = "show history"
+        },
     }
 }
