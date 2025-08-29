@@ -30,7 +30,7 @@ return {
                     plugins = {
                         {
                             name = '@vue/typescript-plugin',
-                            location = os.execute('which vue-language-server'),
+                            location = '/usr/lib/node_modules/@vue/language-server',
                             languages = { 'vue' },
                             configNamespace = 'typescript',
                         },
