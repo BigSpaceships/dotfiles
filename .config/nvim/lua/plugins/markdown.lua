@@ -34,7 +34,7 @@ return {
             dependencies = {
                 "nvim-neo-tree/neo-tree.nvim",
             },
-            lazy = true,
+            lazy = false,
 
             config = function()
                 require("nvim-treesitter.configs").setup({
@@ -43,7 +43,7 @@ return {
                     sync_install = false,
                 })
 
-                require("nabla").enable_virt()
+                require("nabla").enable_virt({autogen = true})
             end,
 
             keys = function()
@@ -117,6 +117,7 @@ return {
                     end
 
                     return marks:get()
+                    -- return {}
                 end
             },
         },
